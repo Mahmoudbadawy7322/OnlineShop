@@ -11,6 +11,15 @@ public class Store {
         return storeProducts;
     }
 
+    public void showStoreProducts(){
+        System.out.println("--------------------------------------------------------------------\nOur Products\n------------");
+        for (int i=0;i<storeProducts.length;i++)
+            if(storeProducts[i] != null)
+                System.out.println((i+1) +" ProductName : "+storeProducts[i].getName() +"  Price : "+storeProducts[i].getPrice()+"  quantity : "+storeProducts[i].getQuantity());
+
+        System.out.println("--------------------------------------------------------------------");
+
+    }
     public void incrementQuantity(int productIndex){
         storeProducts[productIndex].incrementQuantity();
     }

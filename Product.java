@@ -36,6 +36,5 @@ public class Product {
             this.quantity--;
         else
             System.out.println("This product is out of stock");
-
     }
 }
